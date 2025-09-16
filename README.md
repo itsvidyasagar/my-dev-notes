@@ -6,14 +6,8 @@ This is my personal collection of programming and tech notes, tutorials, and cod
 ## 📂 Table of Contents
 
 ### Web Development
-- [01 - HTML](webdev/01-html-css.md)
-- [02 - React](webdev/02-react.md)
-- [03 - NodeJS](webdev/03-nodejs.md)
-
-### Data Structures
-- [01 - Arrays](datastructures/01-arrays.md)
-- [02 - Linked Lists](datastructures/02-linkedlists.md)
-- [03 - Trees](datastructures/03-trees.md)
+- #### Front-End
+  - [01 - HTML](/web-development/front-end/html.md)
 
 ## 📝 How to Use
 - Click any link above to open the corresponding note.  
@@ -25,14 +19,16 @@ This is my personal collection of programming and tech notes, tutorials, and cod
 ```bash
 my-dev-notes/
 ├── readme.md
-├── webdev/
-│   ├── 01-html-css.md
-│   ├── 02-react.md
-│   └── 03-nodejs.md
+├── web-development/
+│   ├── front-end/
+│   │   ├── html.md
+│   │   └── react.md
+│   └── back-end/
+│       └── nodejs.md
 ├── datastructures/
-│   ├── 01-arrays.md
-│   ├── 02-linkedlists.md
-│   └── 03-trees.md
+│   ├── arrays.md
+│   ├── linkedlists.md
+│   └── trees.md
 └── ...
 ```
 
