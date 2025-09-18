@@ -1,6 +1,6 @@
-# my-dev-notes
+# My Dev Notes
 
-Welcome to **my-dev-notes**! 🎉  
+Welcome to **My Dev Notes**! 🎉  
 This is my personal collection of programming and tech notes, tutorials, and coding concepts. The goal is to have a **simple, organized reference** for everything I learn.
 
 ## 📂 Table of Contents
@@ -8,6 +8,8 @@ This is my personal collection of programming and tech notes, tutorials, and cod
 ### Web Development
 - #### Front-End
   - [01 - HTML](/web-development/front-end/html.md)
+### Version Control System
+- [01 - GIT & GITHUB](/version-control-system/git.md)
 
 ## 📝 How to Use
 - Click any link above to open the corresponding note.  
