@@ -1,14 +1,10 @@
 # 📝 Git & GitHub Notes
 
-
-## Git Workflow
-
-```
-WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (GitHub)
-```
+This file contains essential Git Commands and concepts for reference.  
+Use it as a quick guide while learning or developing projects.
 
 
-## Git Configuration
+## 1. Git Configuration
 
 | Command                                                   | Description                                           |
 | --------------------------------------------------------- | ----------------------------------------------------- |
@@ -21,7 +17,14 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git config --global --edit`                              | Opens the global config file to edit                  |
 
 
-## Basic Git Commands
+## 2. Git Workflow
+
+```
+WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (GitHub)
+```
+
+
+## 3. Basic Git Commands
 
 | Command                           | Description                                    |
 | --------------------------------- | ---------------------------------------------- |
@@ -32,7 +35,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git log --graph --oneline --all` | Visual commit tree (very useful!)              |
 
 
-## WORKING DIRECTORY → STAGING AREA
+## 4. Working Directory → Staging area
 
 | Command                         | Description                                                        |
 | ------------------------------- | ------------------------------------------------------------------ |
@@ -46,7 +49,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git restore --staged .`        | Unstage all files                                                  |
 
 
-## STAGING AREA → LOCAL REPO
+## 5. Staging area → Local Repo
 
 | Command                    | Description                                                    |
 | -------------------------- | -------------------------------------------------------------- |
@@ -62,7 +65,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 > Commit history looks like: `... → HEAD~3 → HEAD~2 → HEAD~1 → HEAD`
 
 
-## Git Branches
+## 6. Git Branches
 
 | Command                      | Description                                        |
 | ---------------------------- | -------------------------------------------------- |
@@ -74,18 +77,16 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git checkout -b new-branch` | Create & switch to new branch                      |
 | `git switch branch-name`   | Switch branch (same as checkout)  |
 | `git switch -c new-branch` | Create & switch to new branch     |
-
 | `git merge main`             | Merge `main` into current branch                   |
 | `git merge --abort`          | Cancel merge (on conflict)                         |
 | `git rebase main`            | Reapply commits on top of `main` (no merge commit) |
 | `git rebase --abort`         | Cancel rebase                                      |
 
-> Common branch naming: `feature/`, `bugfix/`, `hotfix/`, `docs/`, `chore/`.
+> - Common branch naming: `feature/`, `bugfix/`, `hotfix/`, `docs/`, `chore/`.
+> - ⚠️ You cannot switch branches with uncommitted changes (unless stashed).
 
-⚠️ You cannot switch branches with uncommitted changes (unless stashed).
 
-
-## Git Stash (store staging area and working directory)
+## 7. Git Stash (store staging area and working directory)
 
 | Command                     | Description                             |
 | --------------------------- | --------------------------------------- |
@@ -93,12 +94,11 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git stash list`            | Show stashes                            |
 | `git stash pop`             | Apply latest stash **and remove it from stash list** |
 | `git stash apply stash@{0}` | Apply stash but keep it in stash list                 |
-
 | `git stash drop stash@{0}`  | Delete specific stash                   |
 | `git stash clear`           | Delete all stashes                      |
 
 
-## Git Comparison
+## 8. Git Comparison
 
 | Command                              | Description                              |
 | ------------------------------------ | ---------------------------------------- |
@@ -110,7 +110,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git log --oneline branch1..branch2` | Same but compact view                    |
 
 
-## GitHub SSH Setup
+## 9. GitHub SSH Setup
 
 1. **Generate SSH key**
 
@@ -134,7 +134,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 > 🔑 SSH setup may change — always check GitHub Docs for latest steps.
 
 
-## LOCAL REPO → REMOTE REPO
+## 10. Local Repo → Remote Repo
 
 | Command | Description                                          |
 | ----------------------------------- | ---------------------------------------------------- |
@@ -153,7 +153,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git pull origin main`              | Fetch + merge `main` into current branch             |
 
 
-## How to Contribute to a Project (Best Practice)
+## 11. How to Contribute to a Project
 
 1. **Fork** the original repo → your GitHub.
 2. **Clone** your fork locally.
