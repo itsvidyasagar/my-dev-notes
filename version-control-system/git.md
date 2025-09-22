@@ -15,6 +15,8 @@ Use it as a quick guide while learning or developing projects.
 | `git config --global color.ui auto`                       | Enables colored Git output                            |
 | `git config --list`                                       | Shows all Git configuration                           |
 | `git config --global --edit`                              | Opens the global config file to edit                  |
+| `git config --global fetch.prune true`                    | every git fetch will automatically remove stale branches |
+
 
 
 ## 2. Git Workflow
@@ -150,6 +152,7 @@ WORKING DIRECTORY ---> STAGING AREA ---> LOCAL REPO (Commits) ---> REMOTE REPO (
 | `git push -u origin main`           | Push & set upstream (next time `git push` is enough) |
 | `git push --delete origin branch`   | Delete remote branch                                 |
 | `git fetch origin`                  | Fetch updates (does not merge)                       |
+| `git fetch --prune origin`          | Removes any remote-tracking branches locally that no longer exist on the remote |
 | `git pull origin main`              | Fetch + merge `main` into current branch             |
 
 
