@@ -8,6 +8,7 @@ psql -h localhost -p 5432 -U vidysagar
 ```
 - Connection establishes between client and `localhost:5432` after authentication of user vidyasagar successful.
 
+**CLUSTER->DATABASE->SCHEMA->TABLE,VIEW,INDEX,PROCEDURE,FUNCTION**
 
 **DATABASE Level Commands**
 |command|description|
@@ -19,7 +20,9 @@ psql -h localhost -p 5432 -U vidysagar
 |`\c COLLEGE` OR `\connect COLLEGE`|Connection to a database(use)|
 |`SHOW CURRENT_DATABASE();`|Display current database|
 
-**SCHEMA Level Commands**
+**SCHEMA Level**
+- schema is a namespace in a database. it is there to organise the database. it helps in classification of departments of a organization data. it does not stop the cross referenence of foreign keys.
+
 |command|description|
 |-------|-----------|
 |`CREATE SCHEMA AUTH;`|creates a schema|
@@ -123,3 +126,6 @@ psql -h localhost -p 5432 -U vidysagar
 - note: and,or,not,>,<,>=,<=,=,<>(not equals) are used in check
 
 **TABLE operational Level Commands**
+| command | description |
+|---------|------------|
+|`insert into 
